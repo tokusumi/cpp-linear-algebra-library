@@ -6,6 +6,8 @@ using Eigen::Vector4f;
 
 int main(int, char **)
 {
+    std::cout << "Support SIMD for: " << Eigen::SimdInstructionSetsInUse() << std::endl;
+
     MatrixXd m(2, 2);
     m(0, 0) = 3;
     m(1, 0) = 2.5;
